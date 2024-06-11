@@ -1,6 +1,6 @@
 <!--### Hello everyone 👋-->
 ```markdown
-# Movie App
+ Movie App
 
 This repository contains an Android Movie App built using Java, following the MVVM (Model-View-ViewModel) architecture. The app uses Retrofit to make network requests to The Movie Database (TMDB) REST API to fetch popular movies and display them in a RecyclerView.
 
