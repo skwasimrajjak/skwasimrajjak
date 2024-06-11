@@ -1,10 +1,41 @@
 <!--### Hello everyone 👋-->
-### Hello
-**Purpose**
+```markdown
+# Movie App
 
-'''markdown
-donde noches
-'''
+This repository contains an Android Movie App built using Java, following the MVVM (Model-View-ViewModel) architecture. The app uses Retrofit to make network requests to The Movie Database (TMDB) REST API to fetch popular movies and display them in a RecyclerView.
+
+## Features
+
+- Fetches and displays popular movies from TMDB API.
+- MVVM architecture for a clean separation of concerns.
+- Retrofit for network requests.
+- LiveData for observable data.
+- RecyclerView for displaying movie list.
+
+## Project Structure
+
+The project is organized into the following folders:
+
+- **model**
+  - `Movie.java`: Defines the schema of the movie data, extends `BaseObservable` for data binding, and includes methods for loading movie poster images.
+  - `MovieRepository.java`: Abstracts data source details and provides a central source of movie data using Retrofit.
+  - `Results.java`: Defines the schema for API results, similar to the movie schema.
+- **serviceapi**
+  - `MovieApiService.java`: Defines the API endpoints using Retrofit annotations.
+  - `RetrofitInstance.java`: Sets up Retrofit and provides an instance for accessing the API.
+- **view**
+  - `MovieAdapter.java`: Manages the RecyclerView, binds data to views, and defines the ViewHolder.
+- **viewmodel**
+  - `MainActivityViewModel.java`: Extends `AndroidViewModel`, uses `MovieRepository` to fetch movie data, and provides LiveData for the view.
+- **MainActivity.java**: The main activity that sets up the ViewModel, RecyclerView, and handles UI interactions.
+
+## Setup and Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/skwasimrazzak/movie-app.git
+   cd movie-app
+   ```
 <h1>
   Hello everyone
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
