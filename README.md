@@ -1,6 +1,6 @@
 <!--### Hello everyone 👋-->
 ```markdown
- Movie App
+# Movie App
 
 This repository contains an Android Movie App built using Java, following the MVVM (Model-View-ViewModel) architecture. The app uses Retrofit to make network requests to The Movie Database (TMDB) REST API to fetch popular movies and display them in a RecyclerView.
 
@@ -20,7 +20,7 @@ The project is organized into the following folders:
   - `Movie.java`: Defines the schema of the movie data, extends `BaseObservable` for data binding, and includes methods for loading movie poster images.
   - `MovieRepository.java`: Abstracts data source details and provides a central source of movie data using Retrofit.
   - `Results.java`: Defines the schema for API results, similar to the movie schema.
-- **serviceapi**
+- serviceapi
   - `MovieApiService.java`: Defines the API endpoints using Retrofit annotations.
   - `RetrofitInstance.java`: Sets up Retrofit and provides an instance for accessing the API.
 - **view**
