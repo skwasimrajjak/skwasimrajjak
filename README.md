@@ -9,7 +9,7 @@
 </div>
 <div id="badges"  align="center">
   <a href="https://github.com/skwasimrazzak">
-    <img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Github Badge"/>
+    <img src="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=twitter&logoColor=white" alt="Github Badge"/>
   </a>
 </div>
 
